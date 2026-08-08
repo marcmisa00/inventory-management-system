@@ -1,0 +1,555 @@
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    padding: 2rem 2.5rem;
+    background: #f4f7fc;
+    min-height: 100vh;
+    transition: background 0.2s ease;
+}
+
+/* Dark Mode Main Content */
+body.dark-mode .main-content {
+    background: #1a1f28;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.page-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0b1a33;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+    transition: color 0.2s ease;
+}
+
+body.dark-mode .page-header h2 {
+    color: #eef2f8;
+}
+
+.page-header h2 i {
+    color: #2563eb;
+}
+
+.page-subtitle {
+    color: #64748b;
+    margin: 0.2rem 0 0 2.5rem;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+body.dark-mode .page-subtitle {
+    color: #94a3b8;
+}
+
+.header-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ===== BUTTONS ===== */
+.btn-secondary {
+    background: #f1f5f9;
+    color: #475569;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+body.dark-mode .btn-secondary {
+    background: #343e50;
+    color: #d0dbe8;
+}
+
+.btn-secondary:hover {
+    background: #e2e8f0;
+    color: #0b1a33;
+    text-decoration: none;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background: #3f4b60;
+    color: #eef2f8;
+}
+
+.btn-info {
+    background: #dbeafe;
+    color: #1e40af;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+body.dark-mode .btn-info {
+    background: #1e2a44;
+    color: #60a5fa;
+}
+
+.btn-info:hover {
+    background: #1e40af;
+    color: white;
+    text-decoration: none;
+}
+
+body.dark-mode .btn-info:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-cancel {
+    background: #f1f5f9;
+    color: #475569;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+body.dark-mode .btn-cancel {
+    background: #343e50;
+    color: #d0dbe8;
+}
+
+.btn-cancel:hover {
+    background: #e2e8f0;
+    color: #0b1a33;
+    text-decoration: none;
+}
+
+body.dark-mode .btn-cancel:hover {
+    background: #3f4b60;
+    color: #eef2f8;
+}
+
+.btn-save {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.btn-save:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn-save:active {
+    transform: translateY(0px);
+}
+
+/* ===== FORM CONTAINER ===== */
+.form-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.dark-mode .form-container {
+    background: #262c38;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== FORM GRID ===== */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* ===== FORM GROUPS ===== */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.2s ease;
+}
+
+body.dark-mode .form-group label {
+    color: #d0dbe8;
+}
+
+.required {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: #f9fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    transition: all 0.2s;
+    color: #0b1a33;
+    outline: none;
+}
+
+body.dark-mode .form-control {
+    background: #1a1f28;
+    border-color: #4a5568;
+    color: #eef2f8;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+body.dark-mode .form-control:focus {
+    background: #1a1f28;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.form-control.is-invalid {
+    border-color: #dc2626;
+    background: #fff5f5;
+}
+
+body.dark-mode .form-control.is-invalid {
+    border-color: #dc2626;
+    background: #2a1414;
+}
+
+.form-control.is-invalid:focus {
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1);
+}
+
+body.dark-mode .form-control.is-invalid:focus {
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.15);
+}
+
+.invalid-feedback {
+    color: #dc2626;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 60px;
+    font-family: inherit;
+}
+
+/* ===== SELECT STYLING ===== */
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7a8f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.1rem;
+    padding-right: 2.8rem;
+    cursor: pointer;
+}
+
+body.dark-mode select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.1rem;
+    padding-right: 2.8rem;
+    cursor: pointer;
+}
+
+select.form-control option {
+    padding: 0.5rem;
+}
+
+body.dark-mode select.form-control option {
+    background: #1a1f28;
+    color: #eef2f8;
+}
+
+select.form-control optgroup {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+body.dark-mode select.form-control optgroup {
+    color: #d0dbe8;
+}
+
+/* ===== STATUS SELECT WRAPPER ===== */
+.status-select-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.current-status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px dashed #d1d5db;
+    flex-wrap: wrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+body.dark-mode .current-status-indicator {
+    background: #1e232e;
+    border-color: #4a5568;
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.status-dot {
+    font-size: 0.5rem;
+}
+
+.status-new {
+    background: #dcfce7;
+    color: #166534;
+}
+
+body.dark-mode .status-new {
+    background: #1a3a2a;
+    color: #6ee7a0;
+}
+
+.status-old {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+body.dark-mode .status-old {
+    background: #3a2e1a;
+    color: #facc15;
+}
+
+.status-damaged {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+body.dark-mode .status-damaged {
+    background: #3a1a1a;
+    color: #f87171;
+}
+
+.status-for-sale {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+body.dark-mode .status-for-sale {
+    background: #1a2a4a;
+    color: #60a5fa;
+}
+
+.status-for-repair {
+    background: #fce7f3;
+    color: #9d174d;
+}
+
+body.dark-mode .status-for-repair {
+    background: #2a1a3a;
+    color: #a78bfa;
+}
+
+.status-hint {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.2s ease;
+}
+
+body.dark-mode .status-hint {
+    color: #64748b;
+}
+
+.status-hint i {
+    color: #2563eb;
+}
+
+/* ===== FORM ACTIONS ===== */
+.form-actions {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #f1f5f9;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+body.dark-mode .form-actions {
+    border-color: #3f4a5a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-column:last-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1.2rem 1rem;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-subtitle {
+        margin-left: 0;
+    }
+
+    .header-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .btn-cancel,
+    .btn-save {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .current-status-indicator {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1rem;
+    }
+
+    .form-control {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+/* ===== PLACEHOLDER COLORS FOR DARK MODE ===== */
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+/* For specific textareas if needed */
+body.dark-mode textarea.form-control::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+/* For better browser compatibility */
+body.dark-mode .form-control::-webkit-input-placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+body.dark-mode .form-control::-moz-placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+body.dark-mode .form-control:-ms-input-placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+body.dark-mode .form-control::-ms-input-placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+/* If you want even lighter placeholder text */
+body.dark-mode .form-control::placeholder {
+    color: #a0b3cc;
+    opacity: 0.8;
+}
